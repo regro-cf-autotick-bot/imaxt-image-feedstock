@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - pytest-runner
     - python >=3.7
   run:
-    - astropy
+    - astropy-base
     - dask-core
     - distributed
     - imagecodecs
